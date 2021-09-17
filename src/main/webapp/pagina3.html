@@ -20,7 +20,7 @@ and open the template in the editor.
                     <tr style="width: 100%; height: 150px">
                         <th style="width: 20%;"> Logo Empresa</th>
                         <th style="width: 70%;"> Nombre Empresa</th>
-                        <th style="width: 10%;"> <a href="index.html">Salir</a></th>
+                        <th style="width: 10%;"> <button><a href="index.html">Salir</a></button></th>
                     </tr>
                 </thead>
             </table>
@@ -70,7 +70,44 @@ and open the template in the editor.
                             
 
                         </td>
-                        <td style="width: 80%;"> <h2>Formulario </h2> </td>
+                        <td style="width: 80%;"> <h2>Formulario </h2> 
+                            <form method="GET" action="pagina2.html">
+                                <label> Nombre: </label>
+                                <input type="text" placeholder="Pedro Perez" name="nombre">
+
+                                <label> Fecha Nacimiento </label>
+                                <input type="date" name="fechaNacimento">
+
+                                <label> Edad </label>
+                                <input type="number" name="edad">
+
+                                <label> Correo </label>
+                                <input type="email" name="correo">
+
+                                <label> Contraseña</label>
+                                <input type="password" name="contra">
+
+                                <label> Genero </label>
+                                <label>Masculino</label>
+                                <input type="radio" value="Masculino" name="btnMasculino">
+                                <label>Femenino</label>
+                                <input type="radio" value="Femenino" name="btnFemenino">
+                                
+                                <input type="submit" name='btnInsertar' value="insertar">
+                                
+                                <div>
+                                    <label> Tipo persona</label>
+                                    <select name="tipo">
+                                        <option value="natural">Natural</option>
+                                        <option value="juridica"> Juridica </option>
+                                        <option value="otro"> otro </option>
+                                    </select>
+                                    
+                                    
+                                </div>
+                            </form>
+                            <button onclick="location.href='tablas.html'"> Enviar </button>
+                        </td>
                     </tr>
                 </thead>
             </table>
