@@ -3,65 +3,134 @@
     <head>
         <title>Start Page</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <style type="text/css">
-            a {
-                height: 100px; 
-                width: 200px; 
-                margin: 10px; 
-                color: black;  
-                background-color: activeborder; 
-            }
-        </style>
-        
-        <link href="assets/estilos/estilos1.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     </head>
     <body>
         <section style="background-color: burlywood; text-align: center">
-            <h1 style="font-size: 50px; color: brown; ">Introducción a CSS!!! </h1>
+            <h1 style="font-size: 50px; color: brown; ">Formulario con Bootstrap </h1>
+        </section>
+        
+        <section>
+            <form>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label">Nombre persona: </label>
+                        <input type="text" class="form-control" placeholder="Pedro Perez">
+                        <label class="form-label">Fecha Nacimiento:  </label>
+                        <input type="date" class="form-control">
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="email" class="form-control" placeholder="Username@dominio.com" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" placeholder="Bogotá" id="ciudadInput">
+                            <label for="ciudadInput">Ciudad</label>
+                        </div>
+                        <br>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="passInput">
+                            <label for="passInput">Contraseña: </label>
+                        </div>
+                        <br>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="txtArea" rows="3"></textarea>
+                            <label for="txtArea">Descripción: </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-primary"> Insertar</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-secondary"> Actualizar</button>
+                    </div>
+                    <div class="col">
+                        <input type="submit" class="btn btn-outline-danger" value="Eliminar">
+                    </div>
+                    <div class="col">
+                        <input type="submit" class="btn btn-outline-warning" value="Consultar">
+                    </div>
+                </div>
+            </div>
+            </form>
+            <br>
+            <div class="container">
+                <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             
-            <a href="#vinculo">Ir a sección</a>
-            <a href="https://www.google.com/">Ir a google</a>
-            <a href="pagina2.html">Ir a otra pagina</a>
-            <a href="tablas.html">Ir a tablas </a>
-            <a href="pagina3.html">Ir a listas</a>
         </section>
-        
-        <section class="claseSeccion">
-             <h1>PARRAFOS: </h1>
-             <p>
-                 Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b> consectetur adipiscing elit,<em> sed do eiusmod tempor incididunt ut labore et </em>  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-             </p>
-             
-             <p>
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris </strong>  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <em>voluptate velit esse cillum dolore eu fugiat nulla</em> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-             </p>
-             
-             Texto
-             <br>
-             Texto
-             
-        </section>
-        
-        <section id="vinculo">
-             <h1>PARRAFOS CON VINCULO: </h1>
-             <p>
-                 Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b> consectetur adipiscing elit,<em> sed do eiusmod tempor incididunt ut labore et </em>  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-             </p>
-             
-             <p>
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris </strong>  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <em>voluptate velit esse cillum dolore eu fugiat nulla</em> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-             </p>
-             
-              <p>
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris </strong>  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <em>voluptate velit esse cillum dolore eu fugiat nulla</em> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-             </p>
-             
-             Texto
-             <br>
-             Texto
-             <button class="claseSeccion">Enviar</button>
+        <br>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/img/mar.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Mar de Colombia</h5>
+                              <p class="card-text">Atardecer en el mar Colombiano</p>
+                              <a href="#" class="btn btn-primary">Ir a galeria</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/img/mar.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Mar de Colombia</h5>
+                              <p class="card-text">Atardecer en el mar Colombiano</p>
+                              <a href="#" class="btn btn-primary">Ir a galeria</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/img/mar.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Mar de Colombia</h5>
+                              <p class="card-text">Atardecer en el mar Colombiano</p>
+                              <a href="#" class="btn btn-primary">Ir a galeria</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     </body>
 </html>
